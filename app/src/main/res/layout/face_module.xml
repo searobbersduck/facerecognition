@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BN_FaceModuleActivity_Register"
+        android:id="@+id/buttonFaceModuleActivity_Register"
+        android:onClick="onClickButton_FaceModuleActivity_Register"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BN_FaceModuleActivity_Manage"
+        android:id="@+id/buttonFaceModuleActivity_Manage"
+        android:onClick="onClickButton_FaceModuleActivity_Manage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserModule"
+        android:id="@+id/buttonFaceModuleActivity_UserModule"
+        android:onClick="onClickButton_FaceModuleActivity_UserModule"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="beast"
+        android:id="@+id/textView_UserName_FaceModuleActivity"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

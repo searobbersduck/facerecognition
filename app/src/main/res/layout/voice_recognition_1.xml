@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Record"
+        android:id="@+id/button_VoiceRecognition1_Record"
+        android:onClick="Record"/>
+
+    <Button
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:text="Create User"
+        android:id="@+id/button_VoiceRecognition1_CreateUser"
+        android:onClick="CreateUser"/>
+
+    <TextView
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/textView_VoiceRecognition1_ResInfo"
+        android:layout_gravity="right" />
+
+    <Button
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:text="Enroll"
+        android:id="@+id/button_VoiceRecognition1_Enroll"
+        android:onClick="Enroll"/>
+
+    <Button
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:text="Indentification"
+        android:id="@+id/button_VoiceRecognition1_Indentification"
+        android:onClick="Indentification"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:text="InputUserName"
+        android:id="@+id/button_VoiceRecognition1_InputUserName"
+        android:onClick="InputUserName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_VoiceRecognition1_Name"
+        android:layout_gravity="right" />
+
+    <ListView
+        android:id="@+id/listView_VoiceRecognition1_User"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="changhe"
+        android:ems="10"
+        android:id="@+id/userName_AddFacialImageForUserActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="16dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView_AddFacialImageForUserActivity"
+        android:layout_below="@+id/userName_AddFacialImageForUserActivity"
+        android:layout_alignRight="@+id/userName_AddFacialImageForUserActivity"
+        android:layout_alignEnd="@+id/userName_AddFacialImageForUserActivity"
+        android:layout_marginRight="590dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginTop="61dp" >
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="auto_fit"
+            android:id="@+id/gridView_AddFacialImageForUserActivity"
+            android:layout_alignBottom="@+id/scrollView_AddFacialImageForUserActivity"
+            android:layout_alignRight="@+id/userName_AddFacialImageForUserActivity"
+            android:layout_alignEnd="@+id/userName_AddFacialImageForUserActivity"
+            android:layout_marginBottom="21dp" />
+
+    </ScrollView>
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        opencv:camera_id="1"
+        android:adjustViewBounds="true"
+        android:gravity="center_vertical"
+        android:id="@+id/java_surface_front_view1"
+        android:layout_alignTop="@+id/userName_AddFacialImageForUserActivity"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo"
+        android:id="@+id/button_Photo__AddFacialImageForUserActivity"
+        android:layout_below="@+id/java_surface_front_view1"
+        android:layout_alignLeft="@+id/userName_AddFacialImageForUserActivity"
+        android:layout_alignStart="@+id/userName_AddFacialImageForUserActivity"
+        android:layout_marginTop="38dp"
+        android:onClick="onClickButton_AddFacialImageForUserActivity_Photo"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_Photo_AddFacialImageForUserActivity_Photo"
+        android:layout_alignTop="@+id/button_Photo__AddFacialImageForUserActivity"
+        android:layout_toRightOf="@+id/button_Photo__AddFacialImageForUserActivity"
+        android:layout_toEndOf="@+id/button_Photo__AddFacialImageForUserActivity"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/button_Register__AddFacialImageForUserActivity"
+        android:onClick="onClickButton_AddFacialImageForUserActivity_Register"
+        android:layout_below="@+id/imageView_Photo_AddFacialImageForUserActivity_Photo"
+        android:layout_toRightOf="@+id/button_Photo__AddFacialImageForUserActivity"
+        android:layout_toEndOf="@+id/button_Photo__AddFacialImageForUserActivity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Train"
+        android:id="@+id/button_Train__AddFacialImageForUserActivity"
+        android:onClick="onClickButton_AddFacialImageForUserActivity_Train"
+        android:layout_alignTop="@+id/button_Register__AddFacialImageForUserActivity"
+        android:layout_toRightOf="@+id/button_Register__AddFacialImageForUserActivity"
+        android:layout_toEndOf="@+id/button_Register__AddFacialImageForUserActivity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predict"
+        android:id="@+id/button_Predict__AddFacialImageForUserActivity"
+        android:layout_alignBottom="@+id/button_Train__AddFacialImageForUserActivity"
+        android:layout_toRightOf="@+id/button_Train__AddFacialImageForUserActivity"
+        android:layout_toEndOf="@+id/button_Train__AddFacialImageForUserActivity"
+        android:onClick="onClickButton_AddFacialImageForUserActivity_Predict"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:id="@+id/textView_PredictUser__AddFacialImageForUserActivity"
+        android:layout_above="@+id/button_Train__AddFacialImageForUserActivity"
+        android:layout_toRightOf="@+id/scrollView_AddFacialImageForUserActivity"
+        android:layout_toEndOf="@+id/scrollView_AddFacialImageForUserActivity" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_AddFacialImageForUserActivity_UserList"
+        android:layout_below="@+id/button_Photo__AddFacialImageForUserActivity"
+        android:layout_toStartOf="@+id/java_surface_front_view1"
+        android:layout_marginTop="35dp"
+        android:layout_alignRight="@+id/button_Train__AddFacialImageForUserActivity"
+        android:layout_alignEnd="@+id/button_Train__AddFacialImageForUserActivity" />
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PersonalIndentificationUI</string>
+
+    <!--PersonalIndentificatioinUIActivity-->
+    <string name="PlayVedio">PlayVideo</string>
+    <string name="ButtonNameFaceModule">Face Module</string>
+    <string name="ASMModule">ASM</string>
+
+    <!--VideoViewActivity-->
+    <string name="VideoViewActivityLabel">Play Video</string>
+    <string name="title_activity_vedio_view_test">VedioViewTestActivity</string>
+
+
+    <!--FaceModuleActivity-->
+    <string name="BN_FaceModuleActivity_Register">Register</string>
+    <string name="BN_FaceModuleActivity_Manage">Manage</string>
+
+    <!--ManageActivity-->
+    <string name="BN_MANAGEACTIVITY_PHOTO">Photo</string>
+    <string name="TEXT_MANAGEACTIVITY_PHOTO">User Name</string>
+
+
+    <!--AddFacialImageForUserActivity-->
+    <string name="AddFacialImageForUserActivity_UserName">UserName</string>
+    <string name="AddFacialImageForUserActivity"></string>
+
+</resources>
